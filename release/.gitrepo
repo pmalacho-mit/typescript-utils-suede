@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/pmalacho-mit/typescript-utils-suede
 	branch = release
-	commit = cf4e5dbea66632ac0925d15296542d3a58ea54be
-	parent = ac97d69c4a770b065e30d32d94c4512c43d36899
+	commit = 4925439f38f226004f122b5a866dbe275635fedb
+	parent = 9427a270f9ba0473737e1c89e4b4fdafcfdeca94
 	method = merge
 	cmdver = 0.4.9
