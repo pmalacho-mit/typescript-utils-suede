@@ -10,11 +10,15 @@ export type ExpandRecursively<T> = T extends object
     : never
   : T;
 
+export type EventOnElement<T extends HTMLElement> = Event & {
+  currentTarget: EventTarget & T;
+};
+
 export type IsNullable<T> = null extends T
   ? true
   : undefined extends T
-    ? true
-    : false;
+  ? true
+  : false;
 
 export type MakeOptionalIfNullable<T> = {
   [K in keyof T as IsNullable<T[K]> extends true ? K : never]?: NonNullable<
